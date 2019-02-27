@@ -1,0 +1,12 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`transformCode should add \`onexpression\` 1`] = `
+Array [
+  4,
+  "__onexpression__(2 ** 3);
+__onexpression__(chunk(['a', 'b', 'c', 'd'], 2));
+__onexpression__(new Map([['key1', 'value1'], ['key2', 'value2']]));
+const never = new Promise(_ => {})
+__onexpression__(never);",
+]
+`;

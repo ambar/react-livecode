@@ -1,0 +1,23 @@
+---
+name: Full Page
+fullpage: true
+route: '/full-page'
+---
+
+import _ from 'lodash'
+import LiveCode from '../src/LiveCode'
+import 'prismjs/themes/prism.css'
+
+<LiveCode
+  autoFocus
+  style={{
+    margin: 0,
+    height: '100vh',
+  }}
+  scope={{_}}
+  code={`
+    2 ** 3
+    new Map([['key1', 'value1'], ['key2', 'value2']])
+    Object.keys(_)
+  `}
+/>

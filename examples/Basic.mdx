@@ -1,0 +1,45 @@
+---
+route: '/'
+---
+
+import chunk from 'lodash/chunk'
+import LiveCode from '../src/LiveCode'
+import 'prismjs/themes/prism.css'
+
+## Horizontal
+
+<LiveCode
+  autoFocus
+  scope={{chunk}}
+  code={`
+    2 ** 3
+    chunk(['a', 'b', 'c', 'd'], 2)
+    new Map([['key1', 'value1'], ['key2', 'value2']])
+    const never = new Promise(_ => {})
+    never
+  `}
+/>
+
+## Vertical
+
+<LiveCode
+  split="vertical"
+  scope={{chunk}}
+  code={`
+    2 ** 3
+    chunk(['a', 'b', 'c', 'd'], 2)
+    new Map([['key1', 'value1'], ['key2', 'value2']])
+    const never = new Promise(_ => {})
+    never
+  `}
+/>
+
+## Module Script
+
+<LiveCode
+  scope={{chunk}}
+  code={`
+    import olt from 'http://unpkg.com/olt'
+    typeof olt
+  `}
+/>

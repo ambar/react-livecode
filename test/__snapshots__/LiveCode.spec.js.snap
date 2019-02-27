@@ -1,0 +1,22 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`transformCode should render synchronously 1`] = `
+HTMLCollection [
+  <div>
+    › 
+    8
+  </div>,
+  <div>
+    › 
+    [["a", "b"], ["c", "d"]]
+  </div>,
+  <div>
+    › 
+    Map {"key1" =&gt; "value1", "key2" =&gt; "value2"}
+  </div>,
+  <div>
+    › 
+    Promise
+  </div>,
+]
+`;

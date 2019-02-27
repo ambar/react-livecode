@@ -1,0 +1,10 @@
+# Directories
+/node_modules
+/coverage
+/cjs
+/esm
+/.docz
+
+# Files
+*.log
+.DS_Store

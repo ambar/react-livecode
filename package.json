@@ -1,0 +1,46 @@
+{
+  "name": "react-livecode",
+  "version": "0.0.1",
+  "description": "Live JavaScript code evaluating",
+  "license": "MIT",
+  "repository": "ambar/react-livecode",
+  "main": "cjs/LiveCode.js",
+  "module": "esm/LiveCode.js",
+  "scripts": {
+    "prepare": "npm test && npm run build",
+    "start": "docz dev",
+    "test": "jest",
+    "test:coverage": "jest --coverage",
+    "test:watch": "jest --watch --notify",
+    "build": "rollup -c"
+  },
+  "files": [
+    "cjs",
+    "esm"
+  ],
+  "dependencies": {
+    "@emotion/core": "^10.0.7",
+    "dedent": "^0.7.0",
+    "is-promise": "^2.1.0",
+    "pretty-format": "^24.0.0",
+    "prismjs": "^1.15.0",
+    "react-simple-code-editor": "^0.8.0",
+    "recast": "^0.17.3"
+  },
+  "peerDependencies": {
+    "react": "^16.8"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.2.2",
+    "@babel/preset-env": "^7.3.1",
+    "@babel/preset-react": "^7.0.0",
+    "docz": "^0.13.7",
+    "docz-plugin-style": "^0.0.0",
+    "docz-theme-default": "^0.13.7",
+    "jest": "^24.1.0",
+    "lodash": "^4.17.11",
+    "react-testing-library": "^5.8.0",
+    "rollup": "^1.1.2",
+    "rollup-plugin-babel": "^4.3.2"
+  }
+}
