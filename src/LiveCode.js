@@ -1,6 +1,6 @@
 /** @jsx jsx */
 import {jsx} from '@emotion/core'
-import React, {useState} from 'react'
+import {useState} from 'react'
 import prettyFormat from 'pretty-format'
 import dedent from 'dedent'
 import isPromise from 'is-promise'
@@ -15,7 +15,7 @@ const inspectPromise = {
   },
 }
 
-const safeTry = (fn, fallback) => {
+const safeCall = (fn, fallback) => {
   try {
     return fn()
   } catch (e) {
@@ -114,7 +114,7 @@ const LiveCode = ({
           boxSizing: 'border-box',
         }}
       >
-        {safeTry(() => serialize(values), serialize)}
+        {safeCall(() => serialize(values), serialize)}
       </pre>
     </div>
   )

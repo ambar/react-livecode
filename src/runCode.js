@@ -3,10 +3,12 @@ import transformCode from './transformCode'
 const createContext = () => {
   const iframe = document.createElement('iframe')
   iframe.hidden = true
-  document.body.appendChild(iframe)
   return {
     run(fn) {
-      fn(iframe.contentWindow)
+      iframe.onload = () => {
+        fn(iframe.contentWindow)
+      }
+      document.body.appendChild(iframe)
     },
     dispose() {
       iframe.remove()
@@ -41,10 +43,12 @@ export const runInNewContext = (code, scope = {}, {modules = true} = {}) => {
         },
       })
 
-      global.onerror = (message, source, lineno, colno, error) => {
-        callback(error)
-        return true
-      }
+      // https://mdn.io/ErrorEvent
+      // https://mdn.io/GlobalEventHandlers/onerror#Notes
+      global.addEventListener('error', e => {
+        e.preventDefault()
+        callback(e.error || new Error(e.message)) // Safari returns null
+      })
 
       const {document} = global
       const script = document.createElement('script')

@@ -1,5 +1,7 @@
 # react-livecode
 
+> Experimental
+
 Live code evaluating:
 
 - Evaluate every expressions your typed, no need to use `console.log`.

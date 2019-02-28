@@ -6,6 +6,7 @@
   "repository": "ambar/react-livecode",
   "main": "cjs/LiveCode.js",
   "module": "esm/LiveCode.js",
+  "source": "src/LiveCode.js",
   "scripts": {
     "prepare": "npm test && npm run build",
     "start": "docz dev",
