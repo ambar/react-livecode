@@ -1,0 +1,18 @@
+{
+  "vendors.css": "/static/css/vendors.7e17cf51.chunk.css",
+  "vendors.js": "/static/js/vendors.ea080118.js",
+  "vendors.js.map": "/static/js/vendors.03b3ce754e1171a2099f.js.map",
+  "app.js": "/static/js/app.30b0646f.js",
+  "app.js.map": "/static/js/app.03b3ce754e1171a2099f.js.map",
+  "examples-basic.js": "/static/js/examples-basic.4f8da854.js",
+  "examples-basic.js.map": "/static/js/examples-basic.03b3ce754e1171a2099f.js.map",
+  "examples-dark-background.js": "/static/js/examples-dark-background.6bdc4d38.js",
+  "examples-dark-background.js.map": "/static/js/examples-dark-background.03b3ce754e1171a2099f.js.map",
+  "examples-full-page.js": "/static/js/examples-full-page.9e59f717.js",
+  "examples-full-page.js.map": "/static/js/examples-full-page.03b3ce754e1171a2099f.js.map",
+  "runtime~app.js": "/static/js/runtime~app.03b3ce754e1171a2099f.js",
+  "runtime~app.js.map": "/static/js/runtime~app.03b3ce754e1171a2099f.js.map",
+  "static/js/6.d2eea770.js": "/static/js/6.d2eea770.js",
+  "static/js/6.03b3ce754e1171a2099f.js.map": "/static/js/6.03b3ce754e1171a2099f.js.map",
+  "index.html": "/index.html"
+}
