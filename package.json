@@ -1,6 +1,6 @@
 {
   "name": "react-livecode",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Live JavaScript code evaluating",
   "license": "MIT",
   "repository": "ambar/react-livecode",
