@@ -3,9 +3,8 @@
   "version": "0.0.2",
   "description": "Live JavaScript code evaluating",
   "license": "MIT",
-  "repository": "ambar/react-livecode",
-  "main": "cjs/LiveCode.js",
-  "module": "esm/LiveCode.js",
+  "main": "dist/LiveCode.cjs.js",
+  "module": "dist/LiveCode.esm.js",
   "source": "src/LiveCode.js",
   "scripts": {
     "prepare": "npm test && npm run build",
@@ -13,12 +12,15 @@
     "test": "jest",
     "test:coverage": "jest --coverage",
     "test:watch": "jest --watch --notify",
+    "prebuild": "rm -rf dist/**",
     "build": "rollup -c"
   },
   "files": [
-    "cjs",
-    "esm"
+    "dist"
   ],
+  "jest": {
+    "testEnvironment": "jsdom"
+  },
   "dependencies": {
     "@emotion/core": "^10.0.7",
     "dedent": "^0.7.0",
@@ -29,17 +31,17 @@
     "recast": "^0.17.3"
   },
   "peerDependencies": {
-    "react": "^16.8"
+    "react": "^16.8 || ^17"
   },
   "devDependencies": {
     "@babel/core": "^7.2.2",
     "@babel/preset-env": "^7.3.1",
     "@babel/preset-react": "^7.0.0",
-    "docz": "^0.13.7",
-    "docz-plugin-style": "^0.0.0",
-    "docz-theme-default": "^0.13.7",
-    "jest": "^24.1.0",
+    "docz": "^2.3.1",
+    "jest": "^27.0.6",
     "lodash": "^4.17.11",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2",
     "react-testing-library": "^5.8.0",
     "rollup": "^1.1.2",
     "rollup-plugin-babel": "^4.3.2"

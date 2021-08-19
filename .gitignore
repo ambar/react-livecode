@@ -1,8 +1,7 @@
 # Directories
 /node_modules
 /coverage
-/cjs
-/esm
+/dist
 /.docz
 
 # Files
